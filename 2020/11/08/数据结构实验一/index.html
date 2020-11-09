@@ -27,12 +27,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="一元多项式实验报告问题描述要求程序能够完成如下功能：(1)创建多项式；(2)打印显示多项式；(3)销毁多项式；(4)复制多项式；(5)求两个多项式的和；(6)求两个多项式的差；(7)求两个多项式的积；(8)求一个多项式的n次幂；(9)计算一个多项式在x&#x3D;a处的值；(10)求两个多项式的商和余式；(11)求两个多项式的最大公约式和最小公倍式；(12)求一个多项式的n阶导函数；(13)求一个多项式的不">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/home/wxxxx/Blog/blog/source/_posts/%E5%9B%BE%E7%89%871.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/zslztms/Figurebed/main/img/pic1.png">
 <meta property="article:published_time" content="2020-11-08T09:11:39.000Z">
-<meta property="article:modified_time" content="2020-11-08T14:35:21.463Z">
+<meta property="article:modified_time" content="2020-11-09T07:27:08.831Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/home/wxxxx/Blog/blog/source/_posts/%E5%9B%BE%E7%89%871.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/zslztms/Figurebed/main/img/pic1.png">
 
 <link rel="canonical" href="http://example.com/2020/11/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AE%9E%E9%AA%8C%E4%B8%80/">
 
@@ -174,10 +174,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-11-08 17:11:39 / Modified: 22:35:21" itemprop="dateCreated datePublished" datetime="2020-11-08T17:11:39+08:00">2020-11-08</time>
+              <time title="Created: 2020-11-08 17:11:39" itemprop="dateCreated datePublished" datetime="2020-11-08T17:11:39+08:00">2020-11-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-11-09 15:27:08" itemprop="dateModified" datetime="2020-11-09T15:27:08+08:00">2020-11-09</time>
+              </span>
 
           
 
@@ -195,7 +201,7 @@
 <p>程序输入输出是在命令行中完成的。用户选择所需功能，并输入数据进行运算。输入错误数据时会要求重新输入或打印错误信息，但不会终止程序。直到用户选择退出，程序结束。</p>
 </blockquote>
 <h3 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a><strong>实验内容</strong></h3><p><strong>存储结构示意图：</strong></p>
-<p><img src="/home/wxxxx/Blog/blog/source/_posts/%E5%9B%BE%E7%89%871.png"></p>
+<p><img src="https://raw.githubusercontent.com/zslztms/Figurebed/main/img/pic1.png" alt="1"></p>
 <p><strong>程序中使用的主要数据结构是以链表存储的多项式，其定义为</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">lnode</span> &#123;</span></span><br><span class="line">	<span class="keyword">float</span> coef;  <span class="comment">// 系数</span></span><br><span class="line">	<span class="keyword">int</span> expn;    <span class="comment">// 指数</span></span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">lnode</span>* <span class="title">next</span>;</span></span><br><span class="line">&#125;lnode, * polynomial;</span><br></pre></td></tr></table></figure>
 
@@ -207,7 +213,7 @@
 </li>
 <li><p>销毁链表中，最后没给头指针赋值NULL，导致出现一系列BUG；</p>
 </li>
-<li><p>采用get_order**()**函数，使每次获得位置下标时，可以安全、方便的获得0~99的数；</p>
+<li><p>采用get_order()函数，使每次获得位置下标时，可以安全、方便的获得0~99的数；</p>
 </li>
 <li><p>有一个清屏并显示所有多项式的功能选项，极大地提升了用户的体验。</p>
 </li>
@@ -231,13 +237,6 @@
 
 
         
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/11/08/zslztms/" rel="prev" title="zslztms">
-      <i class="fa fa-chevron-left"></i> zslztms
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
       </footer>
     
   </article>
@@ -309,7 +308,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
